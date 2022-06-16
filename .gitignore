@@ -132,3 +132,10 @@ dmypy.json
 # Configuration files
 kafka/kafka-tweet-producer/config.py
 kafka/kafka-tweet-producer/docker-run.sh
+.metals/metals.mv.db
+.gitignore
+flink/kafka-tweet-consumer/kafka-tweet-consumer-app/.bloop/*
+flink/kafka-tweet-consumer/kafka-tweet-consumer-app/.metals/*
+flink/kafka-tweet-consumer/kafka-tweet-consumer-app/.vscode/settings.json
+.vscode/settings.json
+flink/kafka-tweet-consumer/kafka-tweet-consumer-app/project/*
