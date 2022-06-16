@@ -131,3 +131,4 @@ dmypy.json
 
 # Configuration files
 kafka/kafka-tweet-producer/config.py
+kafka/kafka-tweet-producer/docker-run.sh
