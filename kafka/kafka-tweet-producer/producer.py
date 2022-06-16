@@ -6,7 +6,6 @@ import tweepy
 from kafka import KafkaProducer
 import json
 import os
-from config import Config
 
 TWITTER_API_KEY             = os.getenv('TWITTER_API_KEY')
 TWITTER_API_SECRET          = os.getenv('TWITTER_API_SECRET')
@@ -29,7 +28,9 @@ class MyStreamListener(tweepy.StreamListener):
         try:
             self.api = api
             super(tweepy.StreamListener, self).__init__()
-            self.producer = KafkaProducer()
+            self.producer = KafkaProducer(
+                bootstrap_servers=['127.0.0.1:9092']
+            )
         except Exception as error:
             print(f'Error initiating Kafka Producer. {error}')
                           
